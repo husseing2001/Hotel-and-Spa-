@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+<title>Contact</title>
+	<meta charset="utf-8">
+	<link rel="StyleSheet" href="Resort.css" >
+	<link rel="icon" href="ICON.jpg" type="image/icon type">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
+	<style>
+		header {
+						background-image: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(Cover5.png);
+						background-size: cover;
+						background-position: center;
+						height: 100vh;
+		}
+		
+		h2 {
+			color:#009999;
+			font-weight:bold;
+			font-size:30px;
+			font-family:cursive;
+		}
+		
+		h3{
+			color:#009999;
+			font-family:cursive;
+		}
+		.footer{
+				background-color:lightblue;
+				padding: 100px;
+		}
+		
+		#kifak{
+			font-size:24px;
+			padding-right:50px;
+			}
+		
+		p{	color: black;
+		    padding:left 50%}
+		
+		body{	background-color: #ffffff }
+		
+		form{ margin: 50px; }
+
+		nav.color{	background: lightblue}
+		
+	</style >
+</head>
+
+<body>
+<header>
+	<nav>
+	<div class="DivNav">
+	<ul>
+		<div class="floatnavleft"> The Gental Touch Hotel </div>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="rooms.html">Room & Services</a></li>
+		<li><a href="restaurant.html">Restaurant</a></li>
+		<li><a href="Outdoors.html">Activities & Outdoors</a></li>
+		<li><a href="contact.html">Contact & Reservation</a></li>
+	</ul>
+	</div>
+	</nav>
+		<h1><br><br><br><br> Try and You Will Not Regret </h1>
+</header>
+
+<a class="top-link hide" href="" id="js-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></a>
+
+<form action="submit.html" >
+<main>
+ <center>
+  <fieldset style="color:black; width:50%; text-align:left; background-color:powderblue;">
+    <table cellspacing="25" border="0">
+		<legend><b>Personal information:</b></legend>
+		
+		<tr><th>First name<br>
+			<input type="text" required></th>
+			<th>Last name:<br>
+			<input type="text" required></th>
+			<th>Email:<br>
+			<input type="email" required></th></tr>
+			
+		<tr><th>Nationality:<br>
+			<input type="text" required></th>
+			<th>Telephone:<br>
+			<input type="tel" pattern="[0-9]{8}" required></th>
+			<th>Preferable room:<br>
+				<select required>
+					<option>Ocean view</option>
+					<option>Superior room</option>
+					<option>Pool room</option>
+					<option>Deluxe resort suite</option>
+					<option>Deluxe sea view suite</option>
+				</select></th></tr>
+				
+		<tr><th>Number of adults:<br>
+			<input type="number" placeholder="1" min="1" max="15" required></th>
+			<th>Number of kids:<br>
+			<input type="number" min="0" max="15" required></th></tr>
+			
+		<tr><th></th><th></th><th style="text-align:right"><input type="submit" style="cursor:pointer"  value="submit booking"></th></tr>
+		
+    </table>
+  </fieldset>
+  </center>
+  </main>
+</form>
+
+<table cellpadding="10px" style="color:black; border-color:black; margin:70px; font-size:18px;">
+	<tr><th style="text-align:left"><h3>TERMS & CONDITIONS</h3></th></tr>
+	<tr><td width="50%">
+	<h3>EXTRA CHARGES:</h3>
+	<p>All fares are quoted in L.L per passenger.<br>
+	150,000L.L port taxes to be added with the price of each category in case of 3 or 4 days .<br>
+	530,000L.L port taxes to be added with the price of each category in case of 7 days .<br>
+	All incidentals, activities, and shore excursions, or personal services are charged as per consumption.<br>
+	Single supplement is applicable for 80% of the double/ twin established rate.</p>
+	<h3>CHILDREN POLICY:</h3>
+	<p>0 to 2 = Free<br>
+	3 to 11 = 50%<br>
+	12 and above, regular adult fare.</p>
+	</td>
+	</tr>
+	<td>
+	<h3>YOUR FARE PRICE INCLUDES:</h3>
+	<p>Breakfast/Lunch/Dinner Teatime and Midnight Pass around Snacks<br>
+	Day and night entertainment<br>
+	Pool and Gym access<br>
+	Kind Club access</p><br>
+</table>
+
+<div class="footer">
+
+	<img src="ICON.jpg" class="imgl" width="100px" height="100px"><span id="kifak">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Gental Touch Resort</span><br><br>
+	
+	<address>
+	Visit us at:<b> Lebanese University, Faculty of Sciences </b><br>
+	Email: <b>resort.lb@outlook.com</b><br>
+	Tel: <b>+961 79132378<br>
+	Beirut, Lebanon</b>
+	</address>
+
+	<ul style="margin-left:-30px"><h4 style="margin-left:-16px; margin-bottom:5px">Team:</h4>
+		<li>Hussein Nasser</li>
+		<li>Hussein Abouzeid</li>
+		<li>Hussein Shahrour</li>
+		<li>Ali Dia</li>
+		<li>Jawad Ftouni </li>
+	</ul>
+	<small>Copyright &#9400; 2021 Resort. All Rights Reserved.<br><a href="mailto: hussein.nasser.4@st.ul.edu.lb ">Hussein Nasser</a>ID = 93833</small>
+	
+</div>
+
+<script>
+
+	$(window).on("scroll", function() {
+		if($(window).scrollTop()) {
+			$('nav').addClass('color');
+		}
+		else
+		{
+			$('nav').removeClass('color');
+		}
+	})
+	
+	
+	
+	const scrollToTopButton = document.getElementById('js-top');
+	const scrollFunc = () => {
+		  let y = window.scrollY;
+		  if (y > 0) {
+			scrollToTopButton.className = "top-link show";
+		  } else {
+			scrollToTopButton.className = "top-link hide";
+		  }
+		};
+	window.addEventListener("scroll", scrollFunc);
+	
+	const scrollToTop = () => {
+	  const c = document.documentElement.scrollTop || document.body.scrollTop;
+	  if (c > 0) {
+		window.requestAnimationFrame(scrollToTop);
+		window.scrollTo(0, c - c / 10);
+		}
+	};
+	scrollToTopButton.onclick = function(e) {
+		e.preventDefault();
+		scrollToTop();
+	}
+	
+</script>
+
+</body>
+</html> 

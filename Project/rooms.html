@@ -1,0 +1,310 @@
+<html lang=en>
+<head>
+<meta charset="UTF-8">
+<title>Rooms & Services</title>
+<link rel="icon" href="ICON.jpg" type="image/icon">
+<link rel="stylesheet" href="Resort.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<style>
+		header {
+				background-image: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(main.jpg);
+				background-size: cover;
+				background-position: center;
+				height: 100vh;
+		}
+		
+		nav.color{  background: #C5CFDA;}
+		
+		.left-side{
+				float: left;
+				width:60%;
+				overflow: auto;
+				padding-bottom: 100px;
+		}
+		.right-side{
+				float:right;
+				width: 30%;
+				
+				overflow: auto;
+	
+				padding-bottom: 100px;
+		}
+
+		
+		#footer {
+				position:relative; 
+				clear:both;
+		}
+
+		.autoSlides{display: none;}
+		
+		.mySlides {display: none;}
+		
+		.slideshow-container {
+				max-width: 100%;
+				position:relative;
+				margin: auto;
+		}
+
+		.dot {
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover{background-color: gray;}
+		
+		div.polaroid {
+				max-width: 100%;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				margin-bottom: 25px;
+		}
+		
+	.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+		}
+		
+		.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+		}
+
+		.prev:hover, .next:hover {	background-color: rgba(0,0,0,0.8);}
+
+		.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+				from {opacity: 0.4} 
+				to {opacity: 1}
+		}
+
+		@keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+		}
+		@media only screen and (max-width: 300px) {
+				.prev, .next,{font-size: 11px}
+		}
+		
+</style>
+
+<body>
+
+<header>
+	<nav>
+	<div class="DivNav">
+	<ul>
+		<div class="floatnavleft"> The Gental Touch Hotel </div>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="rooms.html">Room & Services</a></li>
+		<li><a href="restaurant.html">Restaurant</a></li>
+		<li><a href="Outdoors.html">Activities & Outdoors</a></li>
+		<li><a href="contact.html">Contact & Reservation</a></li>
+	</ul>
+	</div>
+	</nav>
+		<h1> Rooms & Services </h1>
+</header>
+
+<a class="top-link hide" href="" id="js-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></a>
+
+<main>
+<div class="left-side">
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="room1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img  src="room2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img  src="roomsslide3.jpg" style="width:100%">
+  </div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div>
+   <h2>Suites</h2>
+   <ul><h3>Our different suites:</h3>
+   <li><h3>Deluxe resort suite</h3>
+   <p>contains one the best views we can offer over a blue oasis of pools in the heart of the resort along with 3 rooms for you and your family members to enjoy,also a lounge to welcome guests with a stylish decoration that adds a sense of style and elegance.</p></li>
+   <li><h3>Deluxe sea view suit</h3>
+   <p>with sweeping views of the sea,a spacious in the majority of the rooms and lavish decor inspired by the surrounding sea,our deluxe sea view suit will deliver.</p></li>
+   </ul>
+   
+
+<div>
+  <div class="slideshow-container">
+    <div class="autoSlides fade">
+  <img  src="suite.jpg" class="autoSlide" style="width:100%">
+</div>
+  <div class="autoSlides fade">
+  <img  src="pool2.jpg" class="autoSlide" style="width:100%">
+</div>
+  <div class="autoSlides fade">
+  <img  src="suiteslide3.jpg" class="autoSlide" style="width:100%">
+</div>
+  </div>
+      <h3><b>Rooms</b></h3>
+<ul><h3>our different rooms: </h3>
+<li><h3>superior room</h3>
+<p>A stylish room with a welcoming decor,a view to the gardens.The superior rooms are the perfect choice for couples who want to have a short stay at our hotel.</p></li>
+<li><h3>pool room</h3>
+<p>A room with its own private access to a pool.Step out to your own balcony and into your own pool with massage jets to make your experience complete.</p></li>
+</ul>
+</div>
+</div>
+
+<div class="right-side">
+		 <div class="polaroid">
+		  <img src="laundry.jpe" alt="laundry" style="width:100%">
+			  <div>
+			  <p>24/7 laundry services</p>
+			</div>
+		  </div>
+		  
+		<div class="polaroid">
+		<img src="food.jpg" alt="food" style="width:100%">
+		<div>
+		<p>24/7 food service</p>
+		</div>
+		</div>
+		
+		<div class="polaroid">
+		  <img src="Spa.jpg" alt="spa" style="width:100%">
+		  <div>
+			<p>24/7 spa services</p>
+		</div>
+		</div>
+		
+		<div class="polaroid">
+		<img src="carRental.jpg" alt="rental" style="width:100%">
+		<div>
+		  <p>24/7 car rental service</p>
+		</div>
+		</div>
+		
+		<div class="polaroid">
+		<img src="wifi.png" alt="wifi" style="width:100%">
+		<div>
+		  <p>We offer free wifi</p>
+		</div>
+		</div>
+</div>
+
+</main>
+
+<footer id="footer">
+Copyright &#9400; 2021 Resort. All Rights Reserved.<br> The Gentle Touch Resort <br>
+<a href="mailto: hussein.g.abouzeid@gmail.com ">Hussein AbouZeids</a> ID = 92602
+</footer>
+
+<script>
+//setting index to 1
+var slideIndex = 1;
+showSlides(slideIndex);
+//triggered by arrows
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+//triggered by dots
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+//manual function onclick slideshow
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+//Automatic slideshow with 3 seconds timer
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("autoSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+//making nav appear after scrolling
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+      $('nav').addClass('color');
+    }
+    else
+    {
+      $('nav').removeClass('color');
+    }
+  })
+//button to top function
+const scrollToTopButton = document.getElementById('js-top');
+  const scrollFunc = () => {
+      let y = window.scrollY;
+      if (y > 0) {
+      scrollToTopButton.className = "top-link show";
+      } else {
+      scrollToTopButton.className = "top-link hide";
+      }
+    };
+  window.addEventListener("scroll", scrollFunc);
+  
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 10);
+    }
+  };
+  scrollToTopButton.onclick = function(e) {
+    e.preventDefault();
+    scrollToTop();
+  }
+</script>
+
+</body>
+</html>

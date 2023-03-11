@@ -1,0 +1,172 @@
+<html lang=en>
+<head>
+<title>The Gentle Touch Resort | Things to Do</title>
+<meta charset="utf-8">
+<link rel="StyleSheet" href="Resort.css" >
+<link rel="icon" href="ICON.jpg" type="image/icon type">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<style>
+			
+			* {	box-sizing: border-box;}
+				
+		.column {
+				  float: left;
+				  padding: 10px;
+				  height: 1680px;
+				}
+
+		.left {
+				width: 25%;
+			}
+
+		.right {
+				width: 60%;
+			}
+
+		.column1 {
+			  float: left;
+			  width: 40%;
+			  padding: 5px;
+			}
+
+		.row1{
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+		  
+		header {
+					background-image: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(Cover4.jpg);
+					background-size: cover;
+					background-position: center;
+					height: 100vh;
+				}	
+				
+		nav.color{	background: #b8c1bf;}
+		
+
+		
+</style>
+</head>
+
+<body>
+<header>
+	<nav>
+	<div class="DivNav">
+	<ul>
+		<div class="floatnavleft"> The Gental Touch Hotel </div>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="rooms.html">Room & Services</a></li>
+		<li><a href="restaurant.html">Restaurant</a></li>
+		<li><a href="Outdoors.html">Activities & Outdoors</a></li>
+		<li><a href="contact.html">Contact & Reservation</a></li>
+	</ul>
+	</div>
+	</nav>
+		<h1>	ACTIVITIES | THINGS TO DO	</h1>
+</header>
+
+<a class="top-link hide" href="" id="js-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></a>
+
+<main>
+  <div class="column left" style="margin-left:100px">
+    <h2 style="font-size:2.4em; font-weight: bold; color:#4C0013;">Beirut Lebanon</h2>
+    <hr>
+	<ul style="color :#009999 ;font-size : 2em;font-family : Georgia;">
+	OUR ACTIVITIES
+	<li>TENNIS</li>
+	<li>DARTS</li>
+	<li>POOLS</li>
+	<li>JETSKI</li>
+	<li>DIVING</li>
+	<li>KARAOKE BAR</li>
+	</ul>
+	<img src="royal.jpg" alt="Resort Building" style="width:100%">
+	<p style="font-size:2em;color:black;font-family:cursive;">"THE QUALITY OF A LIFE IS DETERMINED BY ITS ACTIVITIES"</p>
+	<img src="Extra.jpg" alt="Quote" style="width:75%">	
+  </div>
+  
+  <div class="column right" style="margin-left:100px;">
+    <h2 style="font-size:2.4em; font-weight: bold; color:#4C0013;">OUTDOORS: THINGS TO DO</h2>
+	<hr>
+	<div class="row1">
+  <div class="column1">
+    <img src="tennis.jpg" alt="" style="width:100%">
+     <p style="text-align: justify;color:black;font-size:1.2em;">Our tennis courts provide you comfortable and quite atmosphere to enjoy your tennis skills and game!(Available from 8:00 AM till 00:00 AM) </p>
+  </div>
+  <div class="column1" style="margin-left:35px;">
+   	<img src="archer.jpg" alt="" style="width:100%"> 
+     <p style="text-align: justify;color:black;font-size:1.2em;">Improve your archery skills with our special bows and arrows! (Available from 7:00 AM till 7:00 PM)</p>
+  </div>
+  </div>
+  
+  <div class="row1">
+  <div class="column1">
+    <img src="poool.jpg" alt="" style="width:100%"> 
+	<p style="text-align: justify;color:black;font-size:1.2em;">A refresh swim in our pools definetly will make your day! (Available from 6:00 AM till 3:00 AM)</p>
+	</div>
+<div class="column1" style="margin-left:35px;">
+   	<img src="jetski.jpg" alt="" style="width:100%">
+	<p style="text-align: justify;color:black;font-size:1.2em;">You can't miss our new jetski activity! With safe equipment and a trained coach, you can enjoy this adventurous activity! (Available from 8:00 AM till 6:00 PM)</p>
+</div>
+</div>
+
+    <div class="row1">
+  <div class="column1">
+    <img src="bar.jpg" alt="" style="width:100%">
+    <p style="text-align: justify;color:black;font-size:1.2em;">To complete your hyper day, you shouldn't miss our night bar. A drink with dancing and singing atmoshpere will complete your day with the maximum enjoyment! (Available from 12:00 PM till 3:00 AM )</p>
+    </div>
+	<div class="column1" style="margin-left:35px;">
+   	<img src="diving.jpg" alt="" style="width:100%">
+    <p style="text-align: justify;color:black;font-size:1.2em;">A trip with our boats and a dive in the heart of the sea, would let you explore the under world! (Available from 10:00 AM till 4:00 PM)</p>
+</div>
+</div>
+</div>
+
+<img src="big.jpg" alt="" style="width:100%; height:500px; object-fit:cover;">
+
+</main>
+<footer>
+Copyright &#9400; 2021 Resort. All Rights Reserved.<br> The Gentle Touch Resort <br>
+<a href="mailto: hussein.shahrour@st.ul.edu.lb">Hussein Shahrour</a> ID = 103404
+</footer>
+
+<script>
+	$(window).on("scroll", function() {
+		if($(window).scrollTop()) {
+			$('nav').addClass('color');
+		}
+		else
+		{
+			$('nav').removeClass('color');
+		}
+	})
+	
+	
+	
+	const scrollToTopButton = document.getElementById('js-top');
+	const scrollFunc = () => {
+		  let y = window.scrollY;
+		  if (y > 0) {
+			scrollToTopButton.className = "top-link show";
+		  } else {
+			scrollToTopButton.className = "top-link hide";
+		  }
+		};
+	window.addEventListener("scroll", scrollFunc);
+	
+	const scrollToTop = () => {
+	  const c = document.documentElement.scrollTop || document.body.scrollTop;
+	  if (c > 0) {
+		window.requestAnimationFrame(scrollToTop);
+		window.scrollTo(0, c - c / 10);
+		}
+	};
+	scrollToTopButton.onclick = function(e) {
+		e.preventDefault();
+		scrollToTop();
+	}
+	
+</script>
+</body>
+</html>

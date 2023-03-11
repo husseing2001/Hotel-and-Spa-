@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+	<title>Welcome Home</title>
+	<meta charset="utf-8">
+	<link rel="StyleSheet" href="Resort.css" >
+	<link rel="icon" href="ICON.jpg" type="image/icon type">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
+	<style>
+		header {
+					background-image: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(Cover1.jpg);
+					background-size: cover;
+					background-position: center;
+					height: 100vh;
+				}	
+		img {	margin:1em;	}
+			
+		nav.color{	background: #003B5C;}
+	</style>
+</head>
+
+<body>
+<script>
+	alert("Attention Please !!!! \n This resort is not real, its still a promo page. \n But all the info that you read about relaxing are True 100% \n Thanks. Enjoy Our Site <3");
+</script>
+<header>
+	<nav>
+	<div class="DivNav">
+	<ul>
+		<div class="floatnavleft"> The Gental Touch Hotel </div>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="rooms.html">Room & Services</a></li>
+		<li><a href="restaurant.html">Restaurant</a></li>
+		<li><a href="Outdoors.html">Activities & Outdoors</a></li>
+		<li><a href="contact.html">Contact & Reservation</a></li>
+	</ul>
+	</div>
+	</nav>
+		<h1> Welcome To The Gental Touch Resort </h1>
+</header>
+<a class="top-link hide" href="" id="js-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></a>
+<main>
+
+<div>
+	<video controls="controls" width="400" height="300" alt="Promo" class="floatleft">
+	 <source src="Promo.mp4" type="video/mp4"> 
+	 <source src="Promo.mp4" type="video/mov">
+	</video>
+	
+	<img src="home2.jpg"  width="200" height="300"  alt="Outside Pool" class="floatright">
+	
+	<h2>Find Your Relaxation</h2>
+	<p>Your phone and laptop aren’t the only things that need recharging. When’s the last time you escaped for a long weekend tripor better yet, for a week-long vacation in Beirut?
+	Take full advantage of your surroundings by enjoying the health benefits that come with an alluring atmosphere. 
+	Here are a few of the many health benefits of being outdoors and enjoying a relaxing week or weekend.
+</p> <br class="clear">
+</div>
+
+<div>
+	<img src="home0.jpg"  width="300" height="200"  alt="Healthy" class="floatright">
+	<h3>IT STRENGTHENS YOUR IMMUNE SYSTEM</h3>
+	<p>Breathing the fresh air–away from the city, out in nature and the open air–can be one of the healthiest things you can do. 
+	Those deep breaths of fresh air you can take can help your immune system reset and increase so you can fight off colds and bugs.</p><br class="clear">
+</div>
+
+<div>
+	<img src="home4.jpg"  width="400" height="200"  alt="Outside Activities" class="floatleft">
+	<h3> IT CAN LOWER YOUR BLOOD PRESSURE</h3>
+	<p>Doctors say fresh air helps with many health challenges people face, like high blood pressure and heart rates. 
+	By spending times outdoors, you may see your blood pressure and heart rate decrease.</p><br class="clear">
+</div>
+
+<div>
+	<img src="home1.jpg"  width="300" height="200"  alt="Healthy" class="floatright">
+	<h3>ALLOWS YOUR BODY TO HEAL AND RECOVER</h3>
+	<p>When you rest, your body can recover and heal. Your muscles can repair themselves from daily wear and tear or more severe injuries from sports or other activities. 
+	Stepping outside of your daily routine and participating in activities that may not be your daily norm may be just what you need.</p><br class="clear">
+</div>
+
+<div>
+	<img src="home5.jpg"  width="200" height="200"  alt="Outside Pool" class="floatleft">
+	<h3>RECHARGES YOUR BRAIN</h3>
+	<p>It’s easy for the everyday hustle-and-bustle to stack up to-do lists and never-ending thoughts. Utilize your resting time to meditate and allow your thoughts to pass by. Meditation is one of the leading methods used to relieve stress. 
+	Your brain can recharge as you take time to rest and relax–and this helps improve your memory and ability to learn.</p><br class="clear">
+</div>
+
+<div>
+	<img src="home6.jpg"  width="300" height="200"  alt="Healthy" class="floatright">
+	<h3>IT IMPROVES SLEEP HABITS</h3>
+	<p>Quality sleep can help your energy levels increase over time. The amount of quality rest you need depends on your age, lifestyle, and habits. 
+	But a weekend of de-stressing can teach you how to relax and help you get closer to the correct number of quality sleep hours you need.</p><br class="clear">
+</div>
+
+<div>
+	<img src="home3.jpg"  width="300" height="200"  alt="Outside Activities" class="floatleft">
+	<h3>INSPIRES YOU TO EAT WELL</h3>
+	<p>Whether you fancy a quick breakfast, poolside lunch or late-night cocktail – whatever you crave, we’ve got the perfect recipe. 
+	Our on-site restaurants will leave you satisfied and ready for more.</p><br class="clear">
+</div>
+</main>
+
+<footer>
+Copyright &#9400; 2021 Resort. All Rights Reserved.<br> The Gentle Touch Resort <br>
+<a href="mailto: ali.dia.1@st.ul.edu.lb ">Ali Dia</a> ID = 94698
+</footer>
+
+<script>
+
+	$(window).on("scroll", function() {
+		if($(window).scrollTop()) {
+			$('nav').addClass('color');
+		}
+		else
+		{
+			$('nav').removeClass('color');
+		}
+	})
+	
+	
+	
+	const scrollToTopButton = document.getElementById('js-top');
+	const scrollFunc = () => {
+		  let y = window.scrollY;
+		  if (y > 0) {
+			scrollToTopButton.className = "top-link show";
+		  } else {
+			scrollToTopButton.className = "top-link hide";
+		  }
+		};
+	window.addEventListener("scroll", scrollFunc);
+	
+	const scrollToTop = () => {
+	  const c = document.documentElement.scrollTop || document.body.scrollTop;
+	  if (c > 0) {
+		window.requestAnimationFrame(scrollToTop);
+		window.scrollTo(0, c - c / 10);
+		}
+	};
+	scrollToTopButton.onclick = function(e) {
+		e.preventDefault();
+		scrollToTop();
+	}
+
+</script>
+
+</body>
+</html>
